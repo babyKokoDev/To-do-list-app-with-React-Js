@@ -28,7 +28,7 @@ h1 {
   background: #1A1A40;
   margin-top: 5rem;
   padding: 2rem;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .TodoForm {
@@ -45,7 +45,15 @@ h1 {
   width: 300px;
   color: #fff;
 }
+@media screen and (max-width:460px) {
+  .todo-input{
+    width: 70%;
+  }
+  .todo-btn{
+    width: 30%;
+  }
 
+}
 .todo-input::placeholder {
   color: #ffffff4d;
 }
@@ -56,7 +64,6 @@ h1 {
   border: none;
   padding: 0.55rem;
   cursor: pointer;
-  
 }
 
 .Todo {
