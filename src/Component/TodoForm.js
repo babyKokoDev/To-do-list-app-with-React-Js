@@ -5,7 +5,12 @@ export const TodoForm = ({addTodo}) => {
     const [value, setValue] = useState('')
     const handleSubmit = (event) => {
          event.preventDefault()
-         addTodo(value)
+         if (value == ""){
+             alert("Please enter a proper todo")
+         }else {
+            addTodo(value)
+         }
+         
 
          setValue('')
     }
